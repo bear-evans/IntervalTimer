@@ -2,9 +2,17 @@
 {
     public partial class MainPage : ContentPage
     {
+        // --------------------------- Time Variables ---------------------------
         private DateTime startTime;
         private DateTime endTime;
 
+        // --------------------------- Settings ---------------------------
+        private bool isStopped;
+        private bool isRepeating;
+
+        /// <summary>
+        /// Main Page constructor.
+        /// </summary>
         public MainPage()
         {
             InitializeComponent();
@@ -20,6 +28,8 @@
         /// </param>
         private async void DoCountdown(double countTime)
         {
+            isStopped = false;
+
             // calculate times
             startTime = DateTime.Now;
             endTime = startTime.AddSeconds(countTime);
@@ -32,7 +42,7 @@
             // Progress the countdown
             double currentProgress = 0;
 
-            while (DateTime.Now < endTime)
+            while (DateTime.Now < endTime && !isStopped)
             {
                 // MATH STUFF
                 timeElapsed = countTime - (endTime - DateTime.Now).TotalSeconds;
@@ -66,6 +76,7 @@
             else
             {
                 // the input was not a number
+                isStopped = true;
             }
         }
 
@@ -76,6 +87,7 @@
         /// <param name="args">Events passed by the sender.</param>
         private async void OnResetClicked(Object sender, EventArgs args)
         {
+            isStopped = true;
         }
 
         // =============================================================================
