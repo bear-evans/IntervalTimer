@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="CandleTimer.MainPage">
+    <ContentPage.Resources>
+        <Style x:Key="InvalidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Red" />
+        </Style>
+        <Style x:Key="ValidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Black" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label x:Name="CountDownText"
+                   Text="TEST"
+                   FontSize="64"
+                   HorizontalTextAlignment="Center">
+                
+            </Label>
+
+            <ProgressBar x:Name="CandleBar" 
+                Progress="1.0" ProgressColor="Green"
+                HeightRequest="50"
+                ScaleY="10">
+            </ProgressBar>
+
+            <FlexLayout HorizontalOptions="Center"
+                        JustifyContent="SpaceAround"
+                        Direction="Row">
+
+                <ContentView>
+                    <FlexLayout Direction="Row">
+
+                        <Entry x:Name="TimeInputField" 
+                            BackgroundColor="AntiqueWhite"
+                           CharacterSpacing="5"
+                           Keyboard="Numeric"
+                           HorizontalTextAlignment="Center"
+                           WidthRequest="200">
+                            <Entry.Behaviors>
+                                <toolkit:NumericValidationBehavior
+                                    InvalidStyle="{StaticResource InvalidEntryStyle}"
+                                    ValidStyle="{StaticResource ValidEntryStyle}"
+                                    Flags="ValidateOnValueChanged"
+                                    MinimumValue="1"
+                                    MaximumDecimalPlaces="0" />
+                            </Entry.Behaviors>
+                        </Entry>
+
+                        <Button x:Name="StartBtn" Text="Start"
+                            SemanticProperties.Hint="Starts the timer."
+                            Clicked="OnStartClicked"
+                            BorderColor="AntiqueWhite"
+                            TextColor="AntiqueWhite"
+                            BackgroundColor="ForestGreen"
+                            WidthRequest="300"
+                            HorizontalOptions="Center" />
+                    </FlexLayout>
+                </ContentView>
+
+                <Button x:Name="PauseBtn" Text="Pause"
+                        SemanticProperties.Hint="Stops the timer."
+                        Clicked="OnResetClicked"
+                        BorderColor="AntiqueWhite"
+                        TextColor="AntiqueWhite"
+                        BackgroundColor="DarkRed"
+                        WidthRequest="300"
+                        HorizontalOptions="Center" />
+            </FlexLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
