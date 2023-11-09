@@ -11,24 +11,25 @@
             <Setter Property="TextColor" Value="Black" />
         </Style>
     </ContentPage.Resources>
-
     <ScrollView>
         <VerticalStackLayout Spacing="25"
             Padding="30,0"
-            VerticalOptions="Center">
+            VerticalOptions="Center"
+>
 
             <Label x:Name="CountDownText"
                    Text="TEST"
                    FontSize="64"
                    HorizontalTextAlignment="Center">
-                
             </Label>
 
-            <ProgressBar x:Name="CandleBar" 
+            <ProgressBar x:Name="CandleBar"
                 Progress="1.0" ProgressColor="Green"
                 HeightRequest="50"
                 ScaleY="10">
             </ProgressBar>
+
+            <toolkit:MediaElement x:Name="BellSFX" Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
 
             <FlexLayout HorizontalOptions="Center"
                         JustifyContent="SpaceAround"
@@ -37,7 +38,7 @@
                 <ContentView>
                     <FlexLayout Direction="Row">
 
-                        <Entry x:Name="TimeInputField" 
+                        <Entry x:Name="TimeInputField"
                             BackgroundColor="AntiqueWhite"
                            CharacterSpacing="5"
                            Keyboard="Numeric"

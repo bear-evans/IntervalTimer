@@ -1,7 +1,20 @@
-﻿namespace CandleTimer
+﻿using CommunityToolkit.Maui.Views;
+
+namespace CandleTimer
 {
     public partial class MainPage : ContentPage
     {
+        #region Variables
+
+        // -------------------------------------------------------------
+        /// <summary>
+        /// Reference to the timer view model.
+        /// </summary>
+        public TimerViewModel timerViewModel;
+        // -------------------------------------------------------------
+
+        #endregion Variables
+
         // --------------------------- Time Variables ---------------------------
         private DateTime startTime;
         private DateTime endTime;
@@ -9,6 +22,9 @@
         // --------------------------- Settings ---------------------------
         private bool isStopped;
         private bool isRepeating;
+        // ==============================================================
+
+        #region Constructor
 
         /// <summary>
         /// Main Page constructor.
@@ -16,49 +32,23 @@
         public MainPage()
         {
             InitializeComponent();
+
+            // Set bindings
+            BellSFX.SetBinding(MediaElement.SourceProperty, "BellDingFile");
+            CountDownText.SetBinding(Label.TextProperty, "CountdownDisplay");
+            TimeInputField.SetBinding(ContentProperty, "TimeInput");
+
+            timerViewModel = new TimerViewModel();
+
+            BindingContext = timerViewModel;
+            Chime();
         }
 
-        // =============================================================================
+        #endregion Constructor
 
-        /// <summary>
-        /// Runs the countdown.
-        /// </summary>
-        /// <param name="countTime">
-        /// The amount of time the user wants the countdown configured to.
-        /// </param>
-        private async void DoCountdown(double countTime)
-        {
-            isStopped = false;
+        // ==============================================================
 
-            // calculate times
-            startTime = DateTime.Now;
-            endTime = startTime.AddSeconds(countTime);
-            double timeElapsed;
-
-            // Reset the candle bar and text field
-            CandleBar.Progress = 1f;
-            CountDownText.Text = countTime.ToString();
-
-            // Progress the countdown
-            double currentProgress = 0;
-
-            while (DateTime.Now < endTime && !isStopped)
-            {
-                // MATH STUFF
-                timeElapsed = countTime - (endTime - DateTime.Now).TotalSeconds;
-
-                currentProgress = timeElapsed / countTime;
-                CountDownText.Text = Math.Round(countTime - timeElapsed).ToString();
-
-                CandleBar.Progress = 1 - currentProgress;
-                await Task.Delay(100);
-            }
-
-            CandleBar.Progress = 1;
-            CandleBar.ProgressColor = Color.Parse("Red");
-        }
-
-        // =============================================================================
+        #region Event Listeners
 
         /// <summary>
         /// Handles the click event of the start button, parsing the input and starting the
@@ -90,6 +80,72 @@
             isStopped = true;
         }
 
-        // =============================================================================
+        #endregion Event Listeners
+
+        // ==============================================================
+
+        #region Timer Display
+
+        public void UpdateTimer()
+        {
+        }
+
+        #endregion Timer Display
+
+        // ==============================================================
+
+        /// <summary>
+        /// Runs the countdown.
+        /// </summary>
+        /// <param name="countTime">
+        /// The amount of time the user wants the countdown configured to.
+        /// </param>
+        private async void DoCountdown(double countTime)
+        {
+            isStopped = false;
+
+            // calculate times
+            startTime = DateTime.Now;
+            endTime = startTime.AddSeconds(countTime);
+            double timeElapsed;
+
+            // Reset the candle bar and text field
+            CandleBar.Progress = 1f;
+            CountDownText.Text = countTime.ToString();
+            CandleBar.ProgressColor = Color.Parse("Green");
+
+            // Progress the countdown
+            double currentProgress = 0;
+
+            while (DateTime.Now < endTime && !isStopped)
+            {
+                // MATH STUFF
+                timeElapsed = countTime - (endTime - DateTime.Now).TotalSeconds;
+
+                currentProgress = timeElapsed / countTime;
+                CountDownText.Text = Math.Round(countTime - timeElapsed).ToString();
+
+                CandleBar.Progress = 1 - currentProgress;
+                await Task.Delay(100);
+            }
+
+            CandleBar.Progress = 1;
+            CandleBar.ProgressColor = Color.Parse("Red");
+        }
+
+        // ==============================================================
+
+        #region Audio
+
+        /// <summary>
+        /// Configures the media source for the bell ding on startup.
+        /// </summary>
+        private void Chime()
+        {
+            BellSFX.Stop();
+            BellSFX.Play();
+        }
+
+        #endregion Audio
     }
 }

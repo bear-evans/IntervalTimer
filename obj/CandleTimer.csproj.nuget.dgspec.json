@@ -65,6 +65,10 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "CommunityToolkit.Maui.MediaElement": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -182,6 +186,10 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "CommunityToolkit.Maui.MediaElement": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -243,6 +251,10 @@
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "CommunityToolkit.Maui.MediaElement": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -306,6 +318,10 @@
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "CommunityToolkit.Maui.MediaElement": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",

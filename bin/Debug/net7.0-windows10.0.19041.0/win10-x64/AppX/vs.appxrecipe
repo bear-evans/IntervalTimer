@@ -29,29 +29,33 @@
     <AppXManifest Include="D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-23T04:00:35.617</Modified>
+      <Modified>2023-11-09T20:31:50.881</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-23T04:00:35.177</Modified>
+      <Modified>2023-11-09T20:31:03.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CandleTimer.runtimeconfig.json">
       <PackagePath>CandleTimer.runtimeconfig.json</PackagePath>
-      <Modified>2023-10-21T14:51:03.155</Modified>
+      <Modified>2023-11-09T18:17:14.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CandleTimer.dll">
       <PackagePath>CandleTimer.dll</PackagePath>
-      <Modified>2023-10-23T04:00:33.425</Modified>
+      <Modified>2023-11-09T20:31:49.594</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CandleTimer.exe</PackagePath>
-      <Modified>2023-10-23T04:00:33.459</Modified>
+      <Modified>2023-11-09T20:31:49.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\CandleTimer\Resources\Raw\Audio\CopperBellDing3.mp3">
+      <PackagePath>Audio\CopperBellDing3.mp3</PackagePath>
+      <Modified>2023-11-07T05:33:46.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CandleTimer.deps.json">
       <PackagePath>CandleTimer.deps.json</PackagePath>
-      <Modified>2023-10-21T14:51:03.008</Modified>
+      <Modified>2023-11-09T18:20:41.247</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kodym\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.12\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -817,6 +821,10 @@
       <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
       <Modified>2023-09-26T07:50:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kodym\.nuget\packages\communitytoolkit.maui.mediaelement\2.0.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.MediaElement.dll">
+      <PackagePath>CommunityToolkit.Maui.MediaElement.dll</PackagePath>
+      <Modified>2023-05-26T08:44:54.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kodym\.nuget\packages\microsoft.extensions.configuration\7.0.0\lib\net7.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
       <Modified>2022-10-18T16:15:22.000</Modified>
@@ -951,23 +959,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.411</Modified>
+      <Modified>2023-11-09T18:17:08.655</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.436</Modified>
+      <Modified>2023-11-09T18:17:08.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.466</Modified>
+      <Modified>2023-11-09T18:17:08.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.513</Modified>
+      <Modified>2023-11-09T18:17:08.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.692</Modified>
+      <Modified>2023-11-09T18:17:08.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -979,207 +987,207 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-10-20T18:28:25.758</Modified>
+      <Modified>2023-11-09T18:17:08.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-10-20T18:28:26.052</Modified>
+      <Modified>2023-11-09T18:17:09.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-10-20T18:28:26.072</Modified>
+      <Modified>2023-11-09T18:17:09.295</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-10-20T18:28:26.084</Modified>
+      <Modified>2023-11-09T18:17:09.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-10-20T18:28:26.105</Modified>
+      <Modified>2023-11-09T18:17:09.325</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-10-20T18:28:26.215</Modified>
+      <Modified>2023-11-09T18:17:09.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.841</Modified>
+      <Modified>2023-11-09T18:17:09.082</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.845</Modified>
+      <Modified>2023-11-09T18:17:09.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.860</Modified>
+      <Modified>2023-11-09T18:17:09.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.849</Modified>
+      <Modified>2023-11-09T18:17:09.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.852</Modified>
+      <Modified>2023-11-09T18:17:09.093</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.816</Modified>
+      <Modified>2023-11-09T18:17:09.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.820</Modified>
+      <Modified>2023-11-09T18:17:09.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.837</Modified>
+      <Modified>2023-11-09T18:17:09.078</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.824</Modified>
+      <Modified>2023-11-09T18:17:09.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.829</Modified>
+      <Modified>2023-11-09T18:17:09.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.770</Modified>
+      <Modified>2023-11-09T18:17:09.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.774</Modified>
+      <Modified>2023-11-09T18:17:09.014</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.778</Modified>
+      <Modified>2023-11-09T18:17:09.019</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.783</Modified>
+      <Modified>2023-11-09T18:17:09.023</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.789</Modified>
+      <Modified>2023-11-09T18:17:09.030</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.793</Modified>
+      <Modified>2023-11-09T18:17:09.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.797</Modified>
+      <Modified>2023-11-09T18:17:09.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.812</Modified>
+      <Modified>2023-11-09T18:17:09.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.800</Modified>
+      <Modified>2023-11-09T18:17:09.042</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.804</Modified>
+      <Modified>2023-11-09T18:17:09.046</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.918</Modified>
+      <Modified>2023-11-09T18:17:09.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.924</Modified>
+      <Modified>2023-11-09T18:17:09.163</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.932</Modified>
+      <Modified>2023-11-09T18:17:09.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.943</Modified>
+      <Modified>2023-11-09T18:17:09.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.961</Modified>
+      <Modified>2023-11-09T18:17:09.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.888</Modified>
+      <Modified>2023-11-09T18:17:09.128</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.892</Modified>
+      <Modified>2023-11-09T18:17:09.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.898</Modified>
+      <Modified>2023-11-09T18:17:09.138</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.903</Modified>
+      <Modified>2023-11-09T18:17:09.142</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.913</Modified>
+      <Modified>2023-11-09T18:17:09.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.865</Modified>
+      <Modified>2023-11-09T18:17:09.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.869</Modified>
+      <Modified>2023-11-09T18:17:09.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.873</Modified>
+      <Modified>2023-11-09T18:17:09.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.878</Modified>
+      <Modified>2023-11-09T18:17:09.118</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.884</Modified>
+      <Modified>2023-11-09T18:17:09.125</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.968</Modified>
+      <Modified>2023-11-09T18:17:09.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.976</Modified>
+      <Modified>2023-11-09T18:17:09.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.986</Modified>
+      <Modified>2023-11-09T18:17:09.223</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-10-20T18:28:26.002</Modified>
+      <Modified>2023-11-09T18:17:09.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-10-20T18:28:26.039</Modified>
+      <Modified>2023-11-09T18:17:09.271</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.809</Modified>
+      <Modified>2023-11-09T18:17:09.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.821</Modified>
+      <Modified>2023-11-09T18:17:09.046</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.839</Modified>
+      <Modified>2023-11-09T18:17:09.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.863</Modified>
+      <Modified>2023-11-09T18:17:09.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-10-20T18:28:25.923</Modified>
+      <Modified>2023-11-09T18:17:09.137</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

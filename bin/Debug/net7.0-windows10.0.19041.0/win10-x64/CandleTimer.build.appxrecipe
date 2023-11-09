@@ -37,6 +37,9 @@
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CandleTimer.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\CandleTimer\Resources\Raw\Audio\CopperBellDing3.mp3">
+      <PackagePath>Audio\CopperBellDing3.mp3</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CandleTimer.deps.json">
       <PackagePath>CandleTimer.deps.json</PackagePath>
     </AppxPackagedFile>
@@ -612,6 +615,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kodym\.nuget\packages\communitytoolkit.maui.core\6.0.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
       <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kodym\.nuget\packages\communitytoolkit.maui.mediaelement\2.0.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.MediaElement.dll">
+      <PackagePath>CommunityToolkit.Maui.MediaElement.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kodym\.nuget\packages\microsoft.extensions.configuration\7.0.0\lib\net7.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>

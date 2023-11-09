@@ -6,6 +6,9 @@ D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Candle
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CandleTimer.pdb
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml
+D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.dll
+D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Core.dll
+D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.MediaElement.dll
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.dll
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.dll
@@ -32,6 +35,7 @@ D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Micros
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.Projection.dll
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Speech.dll
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.dll
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
 D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.CSharp.dll
@@ -322,6 +326,4 @@ D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualif
 D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.dll
-D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Core.dll
-D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Speech.dll
+D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Audio\CopperBellDing3.mp3
