@@ -16,7 +16,7 @@
             Padding="30,0"
             VerticalOptions="Center"
 >
-
+            <!-- COUNTDOWN TIMER BEGIN-->
             <Label x:Name="CountDownText"
                    Text="TEST"
                    FontSize="64"
@@ -29,7 +29,111 @@
                 ScaleY="10">
             </ProgressBar>
 
-            <toolkit:MediaElement x:Name="BellSFX" Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
+            <!-- COUNTDOWN TIMER END-->
+
+            <toolkit:MediaElement x:Name="BellSFX" Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" IsVisible="false" />
+
+            <!-- TIME SETTINGS BEGIN-->
+            <FlexLayout Direction="Row" HorizontalOptions="CenterAndExpand">
+                <VerticalStackLayout>
+                    <Label HorizontalOptions="CenterAndExpand">
+                        <Label.Text>
+                            Start Time
+                        </Label.Text>
+                    </Label>
+                    <TimePicker x:Name="StartTimePicker"
+                                PropertyChanged="SetStartTime" />
+                </VerticalStackLayout>
+            </FlexLayout>
+            <Label x:Name="StartTimeFeedback" Text="Start Time:" HorizontalOptions="CenterAndExpand" />
+            <FlexLayout Direction="Row" HorizontalOptions="CenterAndExpand">
+                <VerticalStackLayout>
+                    <Label HorizontalOptions="CenterAndExpand">
+                        <Label.Text>
+                            End Time
+                        </Label.Text>
+                    </Label>
+                    <TimePicker x:Name="EndTimePicker"
+                                PropertyChanged="SetEndTime" />
+                </VerticalStackLayout>
+            </FlexLayout>
+            <Label x:Name="EndTimeFeedback" Text="End Time:" HorizontalOptions="CenterAndExpand" />
+
+            <!--#region TIME INPUT ENTRY -->
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+
+                <!-- Hour Input-->
+                <ContentView Padding="0,0,0,10">
+                    <VerticalStackLayout>
+                        <Label Text="Hours" />
+                        <Entry x:Name="HoursInput"
+                       BackgroundColor="AntiqueWhite"
+                       TextColor="Black"
+                       Keyboard="Numeric" />
+                    </VerticalStackLayout>
+                </ContentView>
+
+                <Label Text=":"
+                       Margin="5"
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="32" />
+
+                <!-- Minutes Input-->
+                <ContentView Padding="0,0,0,10">
+                    <VerticalStackLayout>
+                        <Label Text="Minutes" />
+                        <Entry x:Name="MinutesInput"
+                       BackgroundColor="AntiqueWhite"
+                       TextColor="Black"
+                       Keyboard="Numeric" />
+                    </VerticalStackLayout>
+                </ContentView>
+
+                <Label Text=":"
+                       Margin="5"
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="32" />
+
+                <!-- Seconds Input-->
+                <ContentView Padding="0,0,0,10">
+                    <VerticalStackLayout>
+                        <Label Text="Seconds" />
+                        <Entry x:Name="SecondsInput"
+                       BackgroundColor="AntiqueWhite"
+                       TextColor="Black"
+                       Keyboard="Numeric" />
+                    </VerticalStackLayout>
+                </ContentView>
+
+                <Button x:Name="SetIntervalButton"
+                        Background="DodgerBlue"
+                        TextColor="White"
+                        Margin="40,0,0,0"
+                        Text="Set Interval"
+                        Clicked="SetInterval"
+                        HeightRequest="20"
+                        VerticalOptions="Center" />
+            </HorizontalStackLayout>
+            <FlexLayout>
+                <Label x:Name="IntervalDisplay" />
+            </FlexLayout>
+            <!--#endregion-->
+
+            <Label>Duration</Label>
+            <Entry x:Name="TimeInputField"
+                            BackgroundColor="AntiqueWhite"
+                           CharacterSpacing="5"
+                           Keyboard="Numeric"
+                           HorizontalTextAlignment="Center">
+                <Entry.Behaviors>
+                    <toolkit:NumericValidationBehavior
+                                    InvalidStyle="{StaticResource InvalidEntryStyle}"
+                                    ValidStyle="{StaticResource ValidEntryStyle}"
+                                    Flags="ValidateOnValueChanged"
+                                    MinimumValue="1"
+                                    MaximumDecimalPlaces="0" />
+                </Entry.Behaviors>
+            </Entry>
 
             <FlexLayout HorizontalOptions="Center"
                         JustifyContent="SpaceAround"
@@ -38,40 +142,22 @@
                 <ContentView>
                     <FlexLayout Direction="Row">
 
-                        <Entry x:Name="TimeInputField"
-                            BackgroundColor="AntiqueWhite"
-                           CharacterSpacing="5"
-                           Keyboard="Numeric"
-                           HorizontalTextAlignment="Center"
-                           WidthRequest="200">
-                            <Entry.Behaviors>
-                                <toolkit:NumericValidationBehavior
-                                    InvalidStyle="{StaticResource InvalidEntryStyle}"
-                                    ValidStyle="{StaticResource ValidEntryStyle}"
-                                    Flags="ValidateOnValueChanged"
-                                    MinimumValue="1"
-                                    MaximumDecimalPlaces="0" />
-                            </Entry.Behaviors>
-                        </Entry>
-
                         <Button x:Name="StartBtn" Text="Start"
                             SemanticProperties.Hint="Starts the timer."
-                            Clicked="OnStartClicked"
+                            Clicked="Start"
                             BorderColor="AntiqueWhite"
                             TextColor="AntiqueWhite"
                             BackgroundColor="ForestGreen"
-                            WidthRequest="300"
                             HorizontalOptions="Center" />
                     </FlexLayout>
                 </ContentView>
 
                 <Button x:Name="PauseBtn" Text="Pause"
                         SemanticProperties.Hint="Stops the timer."
-                        Clicked="OnResetClicked"
+                        Clicked="Pause"
                         BorderColor="AntiqueWhite"
                         TextColor="AntiqueWhite"
                         BackgroundColor="DarkRed"
-                        WidthRequest="300"
                         HorizontalOptions="Center" />
             </FlexLayout>
         </VerticalStackLayout>
