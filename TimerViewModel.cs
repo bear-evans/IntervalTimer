@@ -152,6 +152,7 @@ namespace CandleTimer
         private Color barColorFull = Color.FromArgb("1eeb55");
         private Color barColorHalf = Color.FromArgb("ddff00");
         private Color barColorEmpty = Color.FromArgb("f22a1f");
+        private Color barColorIdle = Color.FromRgb(255, 255, 190);
         // -------------------------------------------------------------
 
         #endregion Colors
@@ -268,24 +269,36 @@ namespace CandleTimer
 
         public async void RunTimer()
         {
+            // timer is started
+            IsRunning = true;
+
             // Only run the timer function if the user has not paused the timer.
             while (!IsUserPaused)
             {
-                // Calculate remaining time in the current interval from the start time.
-                TimeSinceStart = DateTime.Now.TimeOfDay - startTime;
-                RemainingSeconds = TimeSinceStart.TotalSeconds % interval.TotalSeconds;
-
-                // play chime when the counter resets (why this works with the last saved time greater I'm not sure, wierd date time stuff)
-                if (lastSeconds > RemainingSeconds)
+                if (CheckRunTimes())
                 {
-                    PlayChime();
+                    // Calculate remaining time in the current interval from the start time.
+                    TimeSinceStart = DateTime.Now.TimeOfDay - startTime;
+                    RemainingSeconds = TimeSinceStart.TotalSeconds % interval.TotalSeconds;
+
+                    // play chime when the counter resets (why this works with the last saved time greater I'm not sure, wierd date time stuff)
+                    if (lastSeconds > RemainingSeconds)
+                    {
+                        PlayChime();
+                    }
+
+                    SetBarProgress((interval.TotalSeconds - RemainingSeconds) / interval.TotalSeconds);
+
+                    CountdownDisplay = $"{FormatCountdown(TimeSpan.FromSeconds(intervalInSeconds - remainingSeconds))}";
+
+                    await Task.Delay(TimeSpan.FromSeconds(0.25));
+                } else
+                {
+                    DisplayWaiting();
+
+                    await Task.Delay(TimeSpan.FromSeconds(0.5));
                 }
 
-                SetBarProgress((interval.TotalSeconds - RemainingSeconds) / interval.TotalSeconds);
-
-                CountdownDisplay = $"{FormatCountdown(TimeSpan.FromSeconds(intervalInSeconds - remainingSeconds))}";
-
-                await Task.Delay(TimeSpan.FromSeconds(0.25));
             }
 
             DisplayPaused();
@@ -327,6 +340,7 @@ namespace CandleTimer
         private void SetBarPaused()
         {
             TimerBarProgress = 1f;
+            TimerBarColor = barColorIdle;
         }
 
         /// <summary>
@@ -357,9 +371,22 @@ namespace CandleTimer
             ChimeEvent?.Invoke();
         }
 
+        /// <summary>
+        /// Changes the countdown bar to display a paused state.
+        /// </summary>
         private void DisplayPaused()
         {
             CountdownDisplay = "Paused";
+            SetBarPaused();
+        }
+
+        /// <summary>
+        /// Changes the countdown bar to display a waiting state.
+        /// </summary>
+        private void DisplayWaiting()
+        {
+            CountdownDisplay = "Waiting...";
+            SetBarPaused();
         }
 
         /// <summary> Alerts the user that the input field contains invalid input. </summary>
