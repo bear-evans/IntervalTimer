@@ -34,30 +34,24 @@
             <toolkit:MediaElement x:Name="BellSFX" Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" IsVisible="false" />
 
             <!-- TIME SETTINGS BEGIN-->
-            <FlexLayout Direction="Row" HorizontalOptions="CenterAndExpand">
-                <VerticalStackLayout>
-                    <Label HorizontalOptions="CenterAndExpand">
-                        <Label.Text>
-                            Start Time
-                        </Label.Text>
-                    </Label>
-                    <TimePicker x:Name="StartTimePicker"
+            <FlexLayout Direction="Row" WidthRequest="800" HorizontalOptions="Center" JustifyContent="SpaceAround">
+                <Label HorizontalOptions="CenterAndExpand" FontSize="Large">
+                    <Label.Text>
+                        Start Time
+                    </Label.Text>
+                </Label>
+                <TimePicker x:Name="StartTimePicker"
                                 PropertyChanged="SetStartTime" />
-                </VerticalStackLayout>
             </FlexLayout>
-            <Label x:Name="StartTimeFeedback" Text="Start Time:" HorizontalOptions="CenterAndExpand" />
-            <FlexLayout Direction="Row" HorizontalOptions="CenterAndExpand">
-                <VerticalStackLayout>
-                    <Label HorizontalOptions="CenterAndExpand">
-                        <Label.Text>
-                            End Time
-                        </Label.Text>
-                    </Label>
-                    <TimePicker x:Name="EndTimePicker"
+            <FlexLayout Direction="Row" WidthRequest="800" HorizontalOptions="CenterAndExpand" JustifyContent="SpaceAround">
+                <Label HorizontalOptions="CenterAndExpand" FontSize="Large">
+                    <Label.Text>
+                        End Time
+                    </Label.Text>
+                </Label>
+                <TimePicker x:Name="EndTimePicker"
                                 PropertyChanged="SetEndTime" />
-                </VerticalStackLayout>
             </FlexLayout>
-            <Label x:Name="EndTimeFeedback" Text="End Time:" HorizontalOptions="CenterAndExpand" />
 
             <!--#region TIME INPUT ENTRY -->
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
@@ -119,22 +113,7 @@
             </FlexLayout>
             <!--#endregion-->
 
-            <Label>Duration</Label>
-            <Entry x:Name="TimeInputField"
-                            BackgroundColor="AntiqueWhite"
-                           CharacterSpacing="5"
-                           Keyboard="Numeric"
-                           HorizontalTextAlignment="Center">
-                <Entry.Behaviors>
-                    <toolkit:NumericValidationBehavior
-                                    InvalidStyle="{StaticResource InvalidEntryStyle}"
-                                    ValidStyle="{StaticResource ValidEntryStyle}"
-                                    Flags="ValidateOnValueChanged"
-                                    MinimumValue="1"
-                                    MaximumDecimalPlaces="0" />
-                </Entry.Behaviors>
-            </Entry>
-
+            <!--#region BUTTONS-->
             <FlexLayout HorizontalOptions="Center"
                         JustifyContent="SpaceAround"
                         Direction="Row">
@@ -160,6 +139,7 @@
                         BackgroundColor="DarkRed"
                         HorizontalOptions="Center" />
             </FlexLayout>
+            <!--#endregion-->
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

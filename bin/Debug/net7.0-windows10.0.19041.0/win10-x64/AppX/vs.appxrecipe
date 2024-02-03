@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-03T15:40:14.272</Modified>
+      <Modified>2024-02-03T17:39:14.303</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-02-03T15:40:13.973</Modified>
+      <Modified>2024-02-03T17:39:13.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CandleTimer.runtimeconfig.json">
       <PackagePath>CandleTimer.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CandleTimer.dll">
       <PackagePath>CandleTimer.dll</PackagePath>
-      <Modified>2024-02-03T15:40:12.863</Modified>
+      <Modified>2024-02-03T17:39:12.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CandleTimer.exe</PackagePath>
-      <Modified>2024-02-03T15:40:12.873</Modified>
+      <Modified>2024-02-03T17:39:12.844</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\CandleTimer\Resources\Raw\Audio\CopperBellDing3.mp3">
       <PackagePath>Audio\CopperBellDing3.mp3</PackagePath>

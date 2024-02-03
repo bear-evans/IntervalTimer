@@ -28,7 +28,6 @@ namespace CandleTimer
             // countdown bindings
             BellSFX.SetBinding(MediaElement.SourceProperty, "BellDingFile");
             CountDownText.SetBinding(Label.TextProperty, "CountdownDisplay", BindingMode.TwoWay);
-            TimeInputField.SetBinding(Entry.TextProperty, "TimeInput");
 
             // input bindings
             HoursInput.SetBinding(Entry.TextProperty, "HoursInterval", BindingMode.TwoWay);
@@ -45,8 +44,7 @@ namespace CandleTimer
             timerViewModel.StartTimeChangedEvent += OnStartTimeChanged;
             timerViewModel.IntervalChangedEvent += OnIntervalChanged;
 
-            // Populate Initial Display Values
-            // TO DO: This is a clumsy way to do it, rework
+            // Populate Initial Display Values TO DO: This is a clumsy way to do it, rework
             OnStartTimeChanged(timerViewModel.StartTime);
             StartTimePicker.Time = timerViewModel.StartTime;
 
@@ -57,7 +55,6 @@ namespace CandleTimer
 
             OnEndTimeChanged(timerViewModel.EndTime);
             EndTimePicker.Time = timerViewModel.EndTime;
-
         }
 
         #endregion Constructor
@@ -131,23 +128,23 @@ namespace CandleTimer
         /// <param name="startTime"> The new start time. </param>
         public void OnStartTimeChanged(TimeSpan startTime)
         {
-            StartTimeFeedback.Text = @$"Start Time = ${startTime}";
+            //DateTime time = DateTime.Today.Add(startTime);
         }
 
-        /// <summary>
-        /// Updates the settings display when the end time changes.
-        /// </summary>
-        /// <param name="endTime">The new end time.</param>
-        public void OnEndTimeChanged(TimeSpan endTime) 
+        /// <summary> Updates the settings display when the end time changes. </summary>
+        /// <param name="endTime"> The new end time. </param>
+        public void OnEndTimeChanged(TimeSpan endTime)
         {
-            EndTimeFeedback.Text = @$"End Time = ${endTime}";
+            //DateTime time = DateTime.Today.Add(endTime);
         }
 
         /// <summary> Updates the settings display when the interval changes. </summary>
         /// <param name="interval"> The new interval. </param>
         public void OnIntervalChanged(TimeSpan interval)
         {
-            IntervalDisplay.Text = interval.ToString();
+            HoursInput.Text = interval.Hours.ToString();
+            MinutesInput.Text = interval.Minutes.ToString();
+            SecondsInput.Text = interval.Seconds.ToString();
         }
 
         #endregion Settings Display
@@ -173,7 +170,7 @@ namespace CandleTimer
         }
 
         /// <summary> Updates the progress bar's color as the timer progresses. </summary>
-        /// <param name="newColor">The new color of the time bar. </param>
+        /// <param name="newColor"> The new color of the time bar. </param>
         public void OnTimeBarColorChange(Color newColor)
         {
             CandleBar.ProgressColor = newColor;
