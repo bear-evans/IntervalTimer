@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "o25dM5bl7Ta1Kc7GjYYrjxKus0YG56ZOX/SmoV8AZgrvWy2T+IMfQ1PdZxdJlkugF0hB0ocfZZKUG9CXTgvjTw==",
+  "dgSpecHash": "1t3Yl2jz67CoPMDObslco7wKWQisJr8zSlUO0KucTc3CRPZpwQRUxvA4ac56ABN2++nOQXGNyiQgQFCp8TEhdA==",
   "success": true,
   "projectFilePath": "D:\\Development\\CandleTimer\\CandleTimer.csproj",
   "expectedPackageFiles": [
@@ -123,6 +123,7 @@
     "C:\\Users\\kodym\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.7.20.1\\xamarin.kotlin.stdlib.jdk8.1.7.20.1.nupkg.sha512",
     "C:\\Users\\kodym\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.6.4.1\\xamarin.kotlinx.coroutines.android.1.6.4.1.nupkg.sha512",
     "C:\\Users\\kodym\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
+    "C:\\Users\\kodym\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\7.0.12\\microsoft.netcore.app.crossgen2.win-x64.7.0.12.nupkg.sha512",
     "C:\\Users\\kodym\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512",
     "C:\\Users\\kodym\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.12\\microsoft.aspnetcore.app.runtime.win-x64.7.0.12.nupkg.sha512",
     "C:\\Users\\kodym\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.12\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.12.nupkg.sha512",

@@ -27,12 +27,6 @@ namespace CandleTimer
 
             // countdown bindings
             BellSFX.SetBinding(MediaElement.SourceProperty, "BellDingFile");
-            CountDownText.SetBinding(Label.TextProperty, "CountdownDisplay", BindingMode.TwoWay);
-
-            // input bindings
-            HoursInput.SetBinding(Entry.TextProperty, "HoursInterval", BindingMode.TwoWay);
-            MinutesInput.SetBinding(Entry.TextProperty, "MinutesInterval", BindingMode.TwoWay);
-            SecondsInput.SetBinding(Entry.TextProperty, "SecondsInterval", BindingMode.TwoWay);
 
             BindingContext = timerViewModel;
 
@@ -88,13 +82,12 @@ namespace CandleTimer
         /// <param name="args"> Events passed by the sender. </param>
         private void SetInterval(Object sender, EventArgs args)
         {
-            int hours;
-            int minutes;
-            int seconds;
+            if (!int.TryParse(HoursInput.Text, out int hours)) { return; }
+            if (!int.TryParse(MinutesInput.Text, out int minutes)) { return; }
+            if (!int.TryParse(SecondsInput.Text, out int seconds)) { return; }
 
-            if (!int.TryParse(HoursInput.Text, out hours)) { return; }
-            if (!int.TryParse(MinutesInput.Text, out minutes)) { return; }
-            if (!int.TryParse(SecondsInput.Text, out seconds)) { return; }
+            // TO DO: Alert user to error here if something doesn't parse.
+
             TimeSpan newInterval = new TimeSpan(hours, minutes, seconds);
 
             timerViewModel.Interval = newInterval;
