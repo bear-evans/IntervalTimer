@@ -1,1 +1,0 @@
-D:\Development\CandleTimer\CandleTimer.csproj;x64
