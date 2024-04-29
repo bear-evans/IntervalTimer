@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>CandleTimer</ApplicationTitle>
+		<ApplicationTitle>Interval Timer</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.candletimer</ApplicationId>
@@ -32,15 +32,56 @@
 		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
 		<PackageCertificateThumbprint>482E2ABEBD22D5152153391BD1C2CB5E21E75F1E</PackageCertificateThumbprint>
 		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
-		<AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+		<AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
 		<AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
 		<GenerateTestArtifacts>True</GenerateTestArtifacts>
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+		<Title>Interval Timer</Title>
+		<DefaultLanguage>en</DefaultLanguage>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'">
+	  <ApplicationTitle>Interval Timer</ApplicationTitle>
+	  <ApplicationId>com.bearbite.candletimer</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+	  <ApplicationTitle>Interval Timer</ApplicationTitle>
+	  <ApplicationId>com.bearbite.candletimer</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-maccatalyst|AnyCPU'">
+	  <ApplicationTitle>Interval Timer</ApplicationTitle>
+	  <ApplicationId>com.bearbite.candletimer</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationTitle>Interval Timer</ApplicationTitle>
+	  <ApplicationId>com.bearbite.candletimer</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
+	  <ApplicationTitle>Interval Timer</ApplicationTitle>
+	  <ApplicationId>com.bearbite.candletimer</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
+	  <ApplicationTitle>Interval Timer</ApplicationTitle>
+	  <ApplicationId>com.bearbite.candletimer</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-maccatalyst|AnyCPU'">
+	  <ApplicationTitle>Interval Timer</ApplicationTitle>
+	  <ApplicationId>com.bearbite.candletimer</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationTitle>Interval Timer</ApplicationTitle>
+	  <ApplicationId>com.bearbite.candletimer</ApplicationId>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -57,13 +98,33 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="Resources\NewFolder\**" />
+	  <Compile Remove="Resources\NewFolder\**" />
+	  <EmbeddedResource Remove="Resources\NewFolder\**" />
+	  <MauiCss Remove="Resources\NewFolder\**" />
+	  <MauiXaml Remove="Resources\NewFolder\**" />
+	  <None Remove="Resources\NewFolder\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
 		<PackageReference Include="CommunityToolkit.Maui.MediaElement" Version="2.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Resources\NewFolder\" />
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>

@@ -7,10 +7,23 @@
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
     <AppxShowAllApps>False</AppxShowAllApps>
-    <_LastSelectedProfileId>MSIX-win10-x86.pubxml</_LastSelectedProfileId>
+    <_LastSelectedProfileId>MSIX-win10-x861.pubxml</_LastSelectedProfileId>
     <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+    <AppIconSource>D:\Development\CandleTimer\Resources\AppIcon\appicon.png</AppIconSource>
+    <Source>D:\Development\CandleTimer\Resources\AppIcon\appicon.png</Source>
+    <SmallTileSource>D:\Development\CandleTimer\Resources\AppIcon\appicon.png</SmallTileSource>
+    <MediumTileSource>D:\Development\CandleTimer\Resources\AppIcon\appicon.png</MediumTileSource>
+    <WideTileSource>D:\Development\CandleTimer\Resources\AppIcon\appicon.png</WideTileSource>
+    <LargeTileSource>D:\Development\CandleTimer\Resources\AppIcon\appicon.png</LargeTileSource>
+    <SplashScreenSource>D:\Development\CandleTimer\Resources\AppIcon\appicon.png</SplashScreenSource>
+    <BadgeLogoSource>D:\Development\CandleTimer\Resources\AppIcon\appicon.png</BadgeLogoSource>
+    <PackageLogoSource>D:\Development\CandleTimer\Resources\AppIcon\appicon.png</PackageLogoSource>
+    <DefaultDevice>pixel_5_-_api_33</DefaultDevice>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
